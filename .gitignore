@@ -1,5 +1,8 @@
 *.o
 *.out
 a.out
+a.ouit
+a.outc
+helloworld
 *.exe
 /build/

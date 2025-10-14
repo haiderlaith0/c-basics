@@ -35,7 +35,7 @@ int main() {
             }
             break;
         default:
-            printf("Error: Invalid operator!\n");
+            printf("Error: Invalid operator!");
     }
 
     return 0;

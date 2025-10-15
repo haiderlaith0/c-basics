@@ -3,8 +3,15 @@
 int main() {
 
 char grade;
+while (1){
+printf("To exit the program, please type -1.\n");
+
 printf("What's your grade? ");
 scanf("%c", &grade);
+if (grade =-1){
+    printf("Exitting program...\n");
+    break;
+}
 
 
 switch(grade){
@@ -24,11 +31,13 @@ case 'F':
 printf("Your grade is %c, Failed", grade);
 break;
 
-default: 
+default:
 printf("ERROR: Invalid grade!");
 }
 
 
+
+}
 
     return 0;
 }

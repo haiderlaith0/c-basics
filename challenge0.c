@@ -4,7 +4,7 @@ int main() {
 
 char grade;
 printf("What's your grade? ");
-scanf(" %c", &grade);
+scanf("%c", &grade);
 
 
 switch(grade){

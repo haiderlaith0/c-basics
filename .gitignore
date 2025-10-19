@@ -6,4 +6,8 @@ a.outc
 helloworld
 *.exe
 target/
+main
+learning
+Cargo.lock
+Cargo.toml
 /build/

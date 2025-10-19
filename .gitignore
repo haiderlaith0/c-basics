@@ -5,4 +5,5 @@ a.ouit
 a.outc
 helloworld
 *.exe
+target/
 /build/

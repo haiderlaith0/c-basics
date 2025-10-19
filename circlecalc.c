@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
 
 
-double radius;
-double area = 0.0;
-const double PI = 3.14159;
+float radius = 0.0;
+float area = 0.0;
+const double Pi = 3.14159;
 
 
 printf("How much is the radius of the circle? ");
-scanf("%lf", &radius);
+scanf("%f", &radius);
 
-area = pow(radius, 2) * PI;
+area = Pi * radius * radius;
 
-printf("The area of the circle is: %lf", area);
+printf("The area of the circle is: %.2f", area);
 
 
 

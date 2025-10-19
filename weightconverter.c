@@ -8,8 +8,15 @@ double converted;
 
 while(1){
 
-printf("To convert from Kilograms to Pounds, please type A. To convert from Pounds to Kilograms, please tybe B\n");
+    printf("\nTo exit the program, please type in 1, 0 or q\n");
+
+printf("To convert from Kilograms to Pounds, please type A. To convert from Pounds to Kilograms, please type B\n");
 scanf(" %c", &conversion);
+
+    if (conversion == '1' || conversion == '0' || conversion == 'q') {
+        printf("\nGot it, exiting...\n");
+        break;
+    }
 
 switch(conversion){
 case 'A':
@@ -26,7 +33,7 @@ printf("The weight in pounds is %.2lf\n", converted);
 break;
 
 default:
-printf("ERROR: Invalid conversion choice!");
+printf("\nERROR: Invalid conversion choice!\n");
 }
 
 }

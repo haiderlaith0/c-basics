@@ -7,6 +7,7 @@ helloworld
 *.exe
 target/
 main
+math
 learning
 Cargo.lock
 Cargo.toml

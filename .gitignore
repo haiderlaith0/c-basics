@@ -11,4 +11,6 @@ math
 learning
 Cargo.lock
 Cargo.toml
+*.asm
+*.
 /build/

@@ -13,5 +13,4 @@ Cargo.lock
 Cargo.toml
 *.asm
 *.
-*.cpp
 /build/

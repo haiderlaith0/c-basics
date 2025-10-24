@@ -1,4 +1,6 @@
 #include <iostream>
+#include <chrono>
+
 
 double converterBody(double temp, char conversionMethod){
 
@@ -38,8 +40,13 @@ int main(){
  std::cout << "How much is the temperature? " << std::endl;
  std::cin >> temp;
 
-    convertedTemp = converterBody(temp, conversionMethod);
+ auto start = std::chrono::high_resolution_clock::now();
+     convertedTemp = converterBody(temp, conversionMethod);
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::micro> duration = end - start;
+
     std::cout << "The converted temperature is: " << convertedTemp << std::endl;
+    std::cout << "Time taken for conversion is: " << duration.count() << std::endl;
 
  }
     return 0;

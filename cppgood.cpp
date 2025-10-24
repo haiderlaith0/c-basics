@@ -41,12 +41,12 @@ int main(){
  std::cin >> temp;
 
  auto start = std::chrono::high_resolution_clock::now();
-     convertedTemp = converterBody(temp, conversionMethod);
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double, std::micro> duration = end - start;
+ convertedTemp = converterBody(temp, conversionMethod);
+ auto end = std::chrono::high_resolution_clock::now();
+ std::chrono::duration<double, std::nano> duration = end - start;
 
     std::cout << "The converted temperature is: " << convertedTemp << std::endl;
-    std::cout << "Time taken for conversion is: " << duration.count() << std::endl;
+    std::cout << "Time taken for conversion is " << duration.count() << " Nano seconds." << std::endl;
 
  }
     return 0;

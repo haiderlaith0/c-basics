@@ -13,4 +13,7 @@ Cargo.lock
 Cargo.toml
 *.asm
 *.
+testing.c
+testing_fixed
+testing
 /build/

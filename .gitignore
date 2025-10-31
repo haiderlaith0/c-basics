@@ -16,4 +16,5 @@ Cargo.toml
 testing.c
 testing_fixed
 testing
+*.json
 /build/

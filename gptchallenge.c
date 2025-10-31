@@ -6,13 +6,13 @@ return depositAmount + bankBalance;
 float withdrawalBody(float bankBalance, float withDrawalAmount){
 return bankBalance - withDrawalAmount;
 }
-float interestBody(float bankBalance, float interestRateEarly){
-    float interestRate = interestRateEarly / 100.0;
-    return bankBalance + (bankBalance * interestRate);
+float interestBody(float bankBalance, float interestRateEarly, float interestRateLate){
+    interestRateLate = interestRateEarly / 100.0;
+    return bankBalance + (bankBalance * interestRateLate);
 }
 
 int main(){
-    float bankBalance = 400.000;
+    float bankBalance = 400;
     float depositAmount;
     float withDrawalAmount;
     float interestRateEarly;
@@ -93,7 +93,7 @@ int main(){
         else if(interestRateEarly == 0){
             printf("There is no interest!\n");
         }else{
-            generaluseResult = interestBody(bankBalance, interestRateEarly);
+            generaluseResult = interestBody(bankBalance, interestRateEarly, interestRateLate);
             printf("Based on the interest rate of %.1f%%, %.2f dollars will grow to %.2f dollars after one year\n", 
                    interestRateEarly, bankBalance, generaluseResult);
         }

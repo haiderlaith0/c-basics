@@ -4,16 +4,16 @@ int main() {
     float nums1;
     float nums2;
     float result;
-    char operator;
+    char op;  // Changed from operator to op
 
     printf("Enter first number: ");
     scanf("%f", &nums1);
     printf("Enter second number: ");
     scanf("%f", &nums2);
     printf("Choose your operator (+, -, *, /): ");
-    scanf(" %c", &operator);
+    scanf(" %c", &op);  // Changed from operator to op
 
-    switch(operator) {
+    switch(op) {  // Changed from operator to op
         case '+':
             result = nums1 + nums2;
             printf("Result: %.2f\n", result);

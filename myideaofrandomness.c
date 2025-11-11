@@ -12,7 +12,7 @@ int main() {
     srand(time(NULL) ^ getpid() ^ (uintptr_t)&mainnums);
 
     // Array to store 16 randomly picked digits from mainnums
-    int randomnums[32];
+    int randomnums[32] = {0};
 
     // Define the range for random number generation
     int sizeofarray = sizeof(randomnums) / 4; // The size of the array named randomnums

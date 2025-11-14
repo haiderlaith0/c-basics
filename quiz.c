@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main(){
 
-    char questions[3][200] = {"What is the largest planet in the solar system?\n",
-                             "What is the hottest planet in the solar system?\n",
-                             "What's the closest planet to the sun?\n"};
-    char options[][200] = {"A. Mercury\n B. Venus\n C. Earth\n D. Mars\n E. Jupiter\n F. Saturn\n G. Uranus\n H. Neptune\n"};
-    char answers[] = {'E', 'B', 'A'};
+    const char questions[3][200] = {"What is the largest planet in the solar system?\n",
+                              "What is the hottest planet in the solar system?\n",
+                              "What's the closest planet to the sun?\n"};
+    const char options[][96] = {"A. Mercury\n B. Venus\n C. Earth\n D. Mars\n E. Jupiter\n F. Saturn\n G. Uranus\n H. Neptune\n"};
+    const char answers[] = {'E', 'B', 'A'};
     int score = 0;
     char guess = '\0';
 
@@ -18,6 +19,8 @@ int main(){
         puts("Enter your choice: ");
         scanf(" %c", &guess);
 
+        guess = toupper(guess);
+
         if(guess == answers[i]){
             score+=1;
             puts("\nCorrect answer!\n");
@@ -26,6 +29,7 @@ int main(){
         }
     }
     printf("Your score is: %d", score);
+
 
     return 0;
 }

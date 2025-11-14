@@ -18,4 +18,5 @@ testing_fixed
 testing
 *.json
 testing1.c
+learning.c
 /build/

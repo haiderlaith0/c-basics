@@ -19,4 +19,5 @@ testing
 *.json
 testing1.c
 learning.c
+*.cpp
 /build/
